@@ -47,12 +47,12 @@ module.exports = {
       'dark-primary': 'rgba(var(--color-text-dark-primary), <alpha-value>)',
       'dark-secondary': 'rgba(var(--color-text-dark-secondary), <alpha-value>)',
       'dark-disabled': 'rgba(var(--color-text-dark-disabled), <alpha-value>)',
-      'transparent-8': 'rgba(var(var(--color-grey-500), 0.08)',
-      'transparent-12': 'rgba(var(var(--color-grey-500), 0.12)',
-      'transparent-16': 'rgba(var(var(--color-grey-500), 0.16)',
-      'transparent-24': 'rgba(var(var(--color-grey-500), 0.24)',
-      'transparent-32': 'rgba(var(var(--color-grey-500), 0.32)',
-      'transparent-48': 'rgba(var(var(--color-grey-500), 0.48)',
+      'transparent-8': 'rgba(var(--color-grey-500), 0.08)',
+      'transparent-12': 'rgba(var(--color-grey-500), 0.12)',
+      'transparent-16': 'rgba(var(--color-grey-500), 0.16)',
+      'transparent-24': 'rgba(var(--color-grey-500), 0.24)',
+      'transparent-32': 'rgba(var(--color-grey-500), 0.32)',
+      'transparent-48': 'rgba(var(--color-grey-500), 0.48)',
     },
     extend: {
       fontFamily: {
