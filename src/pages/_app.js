@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { ColorSchemeProvider, MantineProvider } from '@mantine/core';
 import '../styles/globals.css';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import Layout from '../layout/Layout';
 
 export default function App({ Component, pageProps }) {
   const [colorScheme, setColorScheme] = useLocalStorage({
@@ -34,10 +35,23 @@ export default function App({ Component, pageProps }) {
               Button: {
                 classNames: { root: 'button-root' },
               },
-            },
+              Container: {
+                defaultProps: {
+                  sizes: {
+                    xs: 540,
+                    sm: 720,
+                    md: 960,
+                    lg: 1184,
+                    xl: 1320,
+                  },
+                },
+              },
+            }
           }}
         >
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </MantineProvider>
       </ColorSchemeProvider>
     </>
