@@ -100,8 +100,12 @@ const DrawerMenu = ({ drawerOpened, closeDrawer, linksOpened, toggleLinks }) => 
                     <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
                     <Group position="center" grow pb="xl" px="md">
-                        <Button variant="default">Log in</Button>
-                        <Button>Sign up</Button>
+                        <Button variant='subtle' component='a' href='/login' className='btn btn-md btn-dark-transparent'>
+                            Login
+                        </Button>
+                        <Button component='a' href='/register' className='btn btn-md btn-dark-primary'>
+                            Join Us
+                        </Button>
                     </Group>
                 </ScrollArea>
             </Drawer>

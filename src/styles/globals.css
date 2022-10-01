@@ -40,7 +40,6 @@
 
     --color-gr-primary: linear-gradient(135deg, #FDAB76 0%, #FA541C 100%);
     --color-gr-secondary: linear-gradient(135deg, #77F0ED 0%, #22B8CF 100%);
-    ;
   }
 
   body {
@@ -119,7 +118,7 @@
   }
 
   .btn-md {
-    @apply h-9 px-5 text-[14px];
+    @apply h-9 px-4 text-[14px];
   }
 
   .btn-sm {
@@ -158,5 +157,9 @@
   .btn-dark-transparent:hover {
     background-color: rgba(var(--color-grey-500), 0.08);
     --btn-border-color: rgba(255, 255, 255, 1);
+  }
+
+  .divider {
+    border-color: rgba(var(--color-grey-500), 0.24);
   }
 }
