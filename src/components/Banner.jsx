@@ -8,7 +8,7 @@ const Banner = () => {
     const [opened, setOpened] = useState(false);
     return (
         <>
-            <section className='banner-area'>
+            <section className='banner-area pb-20'>
                 <Group>
                     <div className='text-center'>
                         <Title order={1} className='text-[40px] lg:text-[64px] font-barlow'>Free <Text component='span' className='text-dark-secondary font-barlow'>Online</Text> <Text component='span' className='text-primary font-barlow' underline>Courses</Text> From The Experts</Title>
