@@ -16,7 +16,7 @@ const HeaderLayout = () => {
 
     return (
         <>
-            <Box pb={120}>
+            <Box>
                 <Container size="lg" px='lg'>
                     <Header height={60} className='border-none'>
                         <Group align='center' position="apart" sx={{ height: '100%' }}>
