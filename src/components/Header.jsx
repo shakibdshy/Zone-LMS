@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Burger, Button, Container, Divider, Group, Header, List, useMantineColorScheme } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks';
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Link from 'next/link'
 import darkLogo from '../assets/dark-logo.svg'
 import lightLogo from '../assets/light-logo.svg'
