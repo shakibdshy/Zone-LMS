@@ -9,7 +9,7 @@ const Banner = () => {
     const [opened, setOpened] = useState(false);
     return (
         <>
-            <section className='banner-area pb-20'>
+            <section className='banner-area mt-16 lg:mt-24 pb-20'>
                 <Grid align="center">
                     <Grid.Col lg={5} className='text-center lg:text-left'>
                         <Title order={1} className='text-[40px] lg:text-[64px] font-barlow'>Free <Text component='span' className='text-dark-secondary lg:leading-[64px] font-barlow'>Online</Text> <Text component='span' className='text-primary lg:leading-[64px] font-barlow' underline>Courses</Text> From The Experts</Title>

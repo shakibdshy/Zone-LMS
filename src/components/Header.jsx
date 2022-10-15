@@ -17,8 +17,8 @@ const HeaderLayout = () => {
     return (
         <>
             <Box>
-                <Container size="lg" px='lg'>
-                    <Header height={60} className='border-none'>
+                <Header fixed className='border-none'>
+                    <Container size="lg" px='lg' className='h-[60px] lg:h-24'>
                         <Group align='center' position="apart" sx={{ height: '100%' }}>
                             <Group align='center' spacing={24}>
                                 <Image src={dark ? lightLogo : darkLogo} alt='Logo' width={74} height={20} />
@@ -80,14 +80,14 @@ const HeaderLayout = () => {
                                 </Button>
                             </Group>
                         </Group>
-                    </Header>
-                    <DrawerMenu
-                        drawerOpened={drawerOpened}
-                        closeDrawer={closeDrawer}
-                        linksOpened={linksOpened}
-                        toggleLinks={toggleLinks}
-                    />
-                </Container>
+                    </Container>
+                </Header>
+                <DrawerMenu
+                    drawerOpened={drawerOpened}
+                    closeDrawer={closeDrawer}
+                    linksOpened={linksOpened}
+                    toggleLinks={toggleLinks}
+                />
             </Box>
 
         </>
