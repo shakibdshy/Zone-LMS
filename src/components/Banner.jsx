@@ -39,7 +39,7 @@ const Banner = () => {
                         <Space h={30} />
                         {/* Counter Section */}
                         <Group grow>
-                            <div className='relative z-10 before:contents before:absolute before:w-6 before:h-6 before:rounded-full before:-top-[3px] before:-left-[6px] before:bg-[#FFC107] before:opacity-[0.24] before:-z-10'>
+                            <div className='text-left relative z-10 before:contents before:absolute before:w-6 before:h-6 before:rounded-full before:-top-[3px] before:-left-[6px] before:bg-[#FFC107] before:opacity-[0.24] before:-z-10'>
                                 <CountUp
                                     start={0}
                                     end={14}
@@ -53,7 +53,7 @@ const Banner = () => {
                                 </CountUp>
                                 <Text className='text-dark-secondary font-poppins'>Learners</Text>
                             </div>
-                            <div className='relative z-10 before:contents before:absolute before:w-6 before:h-6 before:rounded-full before:-top-[3px] before:-left-[6px] before:bg-[#FF4842] before:opacity-[0.24] before:-z-10'>
+                            <div className='text-left relative z-10 before:contents before:absolute before:w-6 before:h-6 before:rounded-full before:-top-[3px] before:-left-[6px] before:bg-[#FF4842] before:opacity-[0.24] before:-z-10'>
                                 <CountUp
                                     start={0}
                                     end={105}
@@ -67,7 +67,7 @@ const Banner = () => {
                                 </CountUp>
                                 <Text className='text-dark-secondary font-poppins'>Courses</Text>
                             </div>
-                            <div className='relative z-10 before:contents before:absolute before:w-6 before:h-6 before:rounded-full before:-top-[3px] before:-left-[6px] before:bg-[#0CD66E] before:opacity-[0.24] before:-z-10'>
+                            <div className='text-left relative z-10 before:contents before:absolute before:w-6 before:h-6 before:rounded-full before:-top-[3px] before:-left-[6px] before:bg-[#0CD66E] before:opacity-[0.24] before:-z-10'>
                                 <CountUp
                                     start={0}
                                     end={59}
@@ -84,9 +84,9 @@ const Banner = () => {
                         </Group>
                     </Grid.Col>
                     <Grid.Col lg={7} className='hidden lg:block'>
-                        <Image src={BannerImage} alt='Banner Image'  />
+                        <Image src={BannerImage} alt='Banner Image' />
                     </Grid.Col>
-                </Grid>  
+                </Grid>
                 <Modal
                     opened={opened}
                     onClose={() => setOpened(false)}
